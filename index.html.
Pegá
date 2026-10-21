@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Construyamos juntos | IES Basail</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;background:#f2f5f8;color:#203044;
+  font-family:Arial,sans-serif;line-height:1.6;
+}
+header{
+  background:#17334d;color:white;padding:38px 22px;
+  text-align:center;border-bottom:5px solid #d8c28a;
+}
+header p{color:#d8c28a;font-weight:bold;letter-spacing:1px}
+h1{font-size:36px;margin:12px 0}
+header .intro{max-width:500px;margin:auto;color:#e1e9f0}
+main{
+  max-width:650px;margin:25px auto;padding:25px;
+  background:white;border-radius:16px;
+  box-shadow:0 5px 20px #00000010;
+}
+h2{color:#17334d}
+label{display:block;font-weight:bold;margin:17px 0 7px}
+input,select,textarea{
+  width:100%;padding:12px;border:1px solid #cbd5e1;
+  border-radius:8px;font-size:16px;background:white;
+}
+textarea{min-height:150px;resize:vertical}
+button{
+  width:100%;padding:14px;margin-top:22px;
+  border:0;border-radius:8px;background:#17334d;
+  color:white;font-size:17px;font-weight:bold;
+}
+.note{font-size:13px;color:#64748b}
+footer{text-align:center;color:#64748b;padding:20px}
+</style>
+</head>
+<body>
+
+<header>
+  <p>IES BASAIL · EDUCACIÓN SUPERIOR</p>
+  <h1>Construyamos juntos</h1>
+  <div class="intro">
+    Un espacio para escucharnos, compartir ideas y
+    pensar en el futuro de nuestra comunidad estudiantil.
+    <br><br><strong>Tu voz también importa.</strong>
+  </div>
+</header>
+
+<main>
+  <h2>Sumate a la iniciativa</h2>
+  <p>
+    Queremos conocer a nuestros compañeros, escuchar sus
+    inquietudes y reunir propuestas para mejorar la experiencia
+    de estudiar en nuestro instituto.
+  </p>
+
+  <form id="formulario">
+    <label for="nombre">Nombre y apellido *</label>
+    <input id="nombre" name="nombre" required
+      placeholder="Escribí tu nombre completo">
+
+    <label for="carrera">Carrera *</label>
+    <select id="carrera" name="carrera" required>
+      <option value="">Seleccioná tu carrera</option>
+      <option>Profesorado de Educación Secundaria en Historia</option>
+      <option>Otra carrera</option>
+    </select>
+
+    <label for="curso">Año que cursás *</label>
+    <select id="curso" name="curso" required>
+      <option value="">Seleccioná tu año</option>
+      <option>1.er año</option>
+      <option>2.º año</option>
+      <option>3.er año</option>
+      <option>4.º año</option>
+      <option>Otro</option>
+    </select>
+
+    <label for="contacto">Contacto (opcional)</label>
+    <input id="contacto" name="contacto"
+      placeholder="WhatsApp o correo electrónico">
+
+    <label for="ideas">Tus ideas y propuestas *</label>
+    <textarea id="ideas" name="ideas" required
+      placeholder="¿Qué te gustaría mejorar? ¿Qué propuestas tenés?"></textarea>
+
+    <label for="participacion">¿Cómo te gustaría participar?</label>
+    <select id="participacion" name="participacion">
+      <option>Aportar ideas</option>
+      <option>Participar en encuentros</option>
+      <option>Ayudar a organizar actividades</option>
+      <option>Informarme primero</option>
+    </select>
+
+    <button type="submit">Enviar mis respuestas</button>
+    <p class="note">
+      Este formulario es una invitación a participar.
+      Tus datos deben tratarse de manera responsable.
+    </p>
+  </form>
+</main>
+
+<footer>
+  Diálogo · Participación · Compromiso
+</footer>
+
+<script>
+document.getElementById("formulario").addEventListener("submit",function(e){
+  e.preventDefault();
+  alert("¡Gracias por participar! El formulario todavía necesita una conexión para recibir tus respuestas.");
+});
+</script>
+
+</body>
+</html>
